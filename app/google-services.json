@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "932696405427",
+    "project_id": "medstab-20918",
+    "storage_bucket": "medstab-20918.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932696405427:android:40be109bc653f3a08547c6",
+        "android_client_info": {
+          "package_name": "io.github.jerrymatera.medstab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932696405427-58l7t8tqa8hev1t38qde92asv37lh0k6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.jerrymatera.medstab",
+            "certificate_hash": "971cb84e9936bf63d6234057b6647664307cf456"
+          }
+        },
+        {
+          "client_id": "932696405427-36cvo0l50uuenjahf1078a5kpg7r0h4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeiRoKLVab1-Zm3Do5Z-cteJCGqCVJ4aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932696405427-36cvo0l50uuenjahf1078a5kpg7r0h4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

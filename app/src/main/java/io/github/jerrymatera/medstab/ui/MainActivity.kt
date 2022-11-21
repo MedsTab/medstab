@@ -1,4 +1,4 @@
-package io.github.jerrymatera.medstab
+package io.github.jerrymatera.medstab.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
