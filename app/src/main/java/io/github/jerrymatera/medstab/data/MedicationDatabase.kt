@@ -14,23 +14,23 @@ import io.github.jerrymatera.medstab.utils.DATABASE_NAME
     version = 1,
     exportSchema = false
 )
-abstract class MedicineDatabase : RoomDatabase() {
+abstract class MedicationDatabase : RoomDatabase() {
     abstract fun medicationDao(): MedicationDao
 
     companion object {
         @Volatile
-        private var instance: MedicineDatabase? = null
+        private var instance: MedicationDatabase? = null
 
-        fun getInstance(context: Context): MedicineDatabase {
+        fun getInstance(context: Context): MedicationDatabase {
             return instance ?: synchronized(this) {
                 instance ?: buildDatabase(context).also { instance = it }
             }
         }
 
-        private fun buildDatabase(context: Context): MedicineDatabase {
+        private fun buildDatabase(context: Context): MedicationDatabase {
             return Room.databaseBuilder(
                 context,
-                MedicineDatabase::class.java,
+                MedicationDatabase::class.java,
                 DATABASE_NAME
             ).build()
         }
