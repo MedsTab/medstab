@@ -1,4 +1,4 @@
-package io.github.jerrymatera.medstab.data.entities
+package io.github.jerrymatera.medstab.data.localdatasource.entities
 
 import androidx.room.Embedded
 import androidx.room.Relation

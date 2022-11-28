@@ -1,12 +1,12 @@
-package io.github.jerrymatera.medstab.data
+package io.github.jerrymatera.medstab.data.localdatasource
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import io.github.jerrymatera.medstab.data.dao.MedicationDao
-import io.github.jerrymatera.medstab.data.entities.Medication
-import io.github.jerrymatera.medstab.data.entities.Prescription
+import io.github.jerrymatera.medstab.data.localdatasource.dao.MedicationDao
+import io.github.jerrymatera.medstab.data.localdatasource.entities.Medication
+import io.github.jerrymatera.medstab.data.localdatasource.entities.Prescription
 import io.github.jerrymatera.medstab.utils.DATABASE_NAME
 
 @Database(

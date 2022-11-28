@@ -1,12 +1,12 @@
-package io.github.jerrymatera.medstab.data.dao
+package io.github.jerrymatera.medstab.data.localdatasource.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Transaction
-import io.github.jerrymatera.medstab.data.entities.Medication
-import io.github.jerrymatera.medstab.data.entities.MedicationWithPrescriptions
-import io.github.jerrymatera.medstab.data.entities.Prescription
+import io.github.jerrymatera.medstab.data.localdatasource.entities.Medication
+import io.github.jerrymatera.medstab.data.localdatasource.entities.MedicationWithPrescriptions
+import io.github.jerrymatera.medstab.data.localdatasource.entities.Prescription
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -36,6 +36,6 @@ interface MedicationDao {
 
     @Transaction
     @Query("DELETE FROM medications WHERE medication_id = :medicationId")
-    suspend fun deleteMedicationWithPrescription(medicationId: Int): MedicationWithPrescriptions
+    suspend fun deleteMedicationWithPrescription(medicationId: Int)
 
 }
